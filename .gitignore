@@ -1,6 +1,4 @@
 /.idea
-/.pytest_cache
 /test
-/docs
-/device_data.bin
-/logs.txt
+/Documentation_plan.docx
+/Brief.pdf
