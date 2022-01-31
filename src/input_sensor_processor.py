@@ -1,19 +1,19 @@
 import argparse
 
-from inputs.from_file import read_from_file
-from sensors.binary_sensor_packet import BinarySensorPacket
-from sensors.sensor_packet import SensorPacket
-from sensors.temp_sensor_packet import TempSensorPacket
-from utilities.logs import log_output, clear_log
-from config import packet_templates, continuous_mode
+from src.inputs.from_file import read_from_file
+from src.sensors.binary_sensor_packet import BinarySensorPacket
+from src.sensors.sensor_packet import SensorPacket
+from src.sensors.temp_sensor_packet import TempSensorPacket
+from src.utilities.logs import log_output, clear_log
+from src.config import packet_templates, continuous_mode
 
 
-def determine_sensor(sensor_devices, bufferdata):
+def determine_sensor(packet_templates, bufferdata):
     """Check the first byte in the packet to determine the sensor template"""
     packet_identifier = bufferdata[:2]
-    for i in sensor_devices:
+    for i in packet_templates:
         if packet_identifier in i:
-            return sensor_devices[sensor_devices.index(i)]
+            return packet_templates[packet_templates.index(i)]
 
 
 def extract_packet_data(packet_template, bufferdata):

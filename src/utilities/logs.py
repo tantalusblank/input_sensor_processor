@@ -1,5 +1,5 @@
 from datetime import datetime
-from config import log_file_path, clear_logs_on_run
+from src.config import log_file_path, clear_logs_on_run
 
 
 def log_output(sensor_packet):

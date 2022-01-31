@@ -1,4 +1,4 @@
-from config import temp_limit_lower, temp_limit_upper
+from src.config import temp_limit_lower, temp_limit_upper
 from src.sensors.sensor_packet import SensorPacket
 
 
