@@ -26,4 +26,4 @@ jobs:
       - name: Package Application
         uses: JackMcKew/pyinstaller-action-windows@v0.1.2
         with:
-          path: input_sensor_processor.py
+          path: src
