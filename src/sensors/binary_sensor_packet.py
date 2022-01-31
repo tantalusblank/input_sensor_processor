@@ -1,4 +1,4 @@
-from sensors.sensor_packet import SensorPacket
+from src.sensors.sensor_packet import SensorPacket
 
 
 class BinarySensorPacket(SensorPacket):

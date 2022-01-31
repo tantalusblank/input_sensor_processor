@@ -1,5 +1,5 @@
 from config import temp_limit_lower, temp_limit_upper
-from sensors.sensor_packet import SensorPacket
+from src.sensors.sensor_packet import SensorPacket
 
 
 class TempSensorPacket(SensorPacket):
