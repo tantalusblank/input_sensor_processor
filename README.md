@@ -10,19 +10,16 @@ Running the script with input data generates a log file in the specified folder.
 Out of the three technologies considered for this project, Python was chosen due to it being most suitable for the use case:
 ### Labview
 ```diff
-+ Extensive support for interfacing with devices such as
-    thermocouples and hall effect sensors.
++ Extensive support for interfacing with devices such as thermocouples and hall effect sensors.
 + NodeRED integration available, making existing knowledge with it valuable.
-- Creating an executable file requires the 'application builder'.
-    This is part of LabVIEW professional and is not free. 
+- Creating an executable file requires the 'application builder'. This is part of LabVIEW professional and is not free. 
 - Fewer learning resources available.
 ```
 
 ### Javascript
 ```diff
 + Free
-- Cannot directly compile to an executable
-    without packaging the entire JavaScript/Node.js/etc source code
+- Cannot directly compile to an executable without packaging the entire JavaScript/Node.js/etc source code
 - Primarily for web applications
 ```
 
