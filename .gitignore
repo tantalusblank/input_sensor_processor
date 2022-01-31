@@ -1,6 +1,6 @@
 /.idea
 /.pytest_cache
-/test
+/test/Sample data reformatted.txt
+/test/device_data.bin
 /docs
-/device_data.bin
 /logs.txt
